@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head> Sign In form
+<style>
+
+.dateofbirth {
+  position: relative;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+  margin-left: 0;
+} 
+
+.add{
+  position: relative;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+.ph {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form-control {
+  text-align:left;
+  background-color:#f2f2f2; 
+  border-radius: 0px 0px 4px 4px;
+}
+
+</style>
+</head>
+<body>
+<form action="/action_page.php">
+
+<div class="form-control"> 
+                <label class="header">Profile Photo:   </label>
+
+                <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+            </div>
+			
+<div class ="dateofbirth">
+
+Select date of birth : <input type="date"><br>
+</div>
+<div class="add">
+<label for="Address">Address: </label><br>
+
+  <input type="text" id="Address" name="Address"><br>
+  </div>
+  <div class="ph">
+  <label for="phone"> phone number: </label>
+
+<input id="phone" type="tel">
+	   </div>
+	    <input type="submit" value=" SIGN IN">
+
+</form>
+</body>
+
+</html>
+
